@@ -1,0 +1,11 @@
+{
+  "name": "webpack-problem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "build-server": "webpack --config webpack/webpack.config.server.js",
+    "build-client": "webpack --config webpack/webpack.config.client.js"
+  },
+}

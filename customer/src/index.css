@@ -1,0 +1,305 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 140% sans-serif;
+}
+
+input {
+    font-size: 110%;
+    outline: 0;
+}
+
+.jumbotron {
+    color: #222;
+    background-color: burlywood;
+}
+
+.jumbotron h2 {
+    font-family: sans-serif;
+    font-size: 3.5em;
+}
+
+.navbar-menu {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+.search-bar-wrapper {
+    width: 100%;
+}
+
+.blend-item-contents {
+    background-color: #FFFAF0;
+    height: 175px;
+    border: solid 1px rosybrown;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.blend-item-descr {
+    color: rgba(0, 0, 0, 0.7);
+    padding-top: 10px;
+}
+
+.blend-item-roast {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.result-item {
+    padding-bottom: 30px;
+}
+
+.result-item h5 {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.result-item-content h2 {
+    margin-top: -6px;
+}
+
+.result-item h2 small {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.result-item-content {
+    background-color: #FFFAF0;
+    outline: 1px solid rosybrown;
+    padding: 15px 15px 15px 30px;
+}
+
+.result-item-content hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rosybrown;
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+.result-item-content ul.list-inline li {
+    color: rgba(6, 10, 26, 0.7);
+}
+
+@media screen and (min-width: 640px) {
+    .search-bar-wrapper {
+        min-width: 480px;
+        width: 40%;
+    }
+}
+
+.search-bar-field {
+    position: relative;
+}
+
+.search-bar-input {
+    -webkit-appearance: none;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 40px 10px 10px;
+    width: 100%;
+}
+
+.has-suggestions .search-bar-input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    font-size: 0;
+    height: 100%;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+}
+
+.search-bar-clear {
+    background-image: url(../public/img/cancel.svg);
+    background-size: 25%;
+    right: 40px;
+    width: 40px;
+}
+
+.search-bar-submit {
+    background-color: #e5e5e5;
+    background-image: url(../public/img/search.svg);
+    background-size: 35%;
+    border: 1px solid #ddd;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 0 20px;
+    opacity: .8;
+    width: 40px;
+}
+
+.search-bar-submit:hover {
+    opacity: 1;
+}
+
+.is-focused .search-bar-input,
+.is-focused .search-bar-submit {
+    border-color: #ccc;
+}
+
+.search-bar-suggestions {
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-sizing: border-box;
+    font-size: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -1px;
+}
+
+.search-bar-suggestions li {
+    cursor: default;
+    letter-spacing: 0.03em;
+    padding: 12px 7px 12px 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.search-bar-suggestions li:last-child {
+    border: none;
+}
+
+.search-bar-suggestions .highlighted {
+    background: #f5f5f5;
+}
+
+.search-header {
+    width: 100%;
+}
+
+.logo-home {
+    margin-left: 72px;
+}
+
+.logo {
+    float: left;
+}
+.logo ::after {
+    clear: both;
+}
+
+.search-box {
+    margin-top: 60px;
+}
+
+.results-header {
+    font-family: "serif";
+    margin-bottom: 20px;
+}
+.results-header h3 {
+    font-size: 18px;
+}
+
+.results-body {
+}
+
+.results-box {
+    float: left;
+    margin-top: 60px;
+}
+.results-box ::after {
+    clear: both;
+}
+
+.cafe-box {
+    float: left;
+    margin-top: 20px;
+}
+
+.cafe-info-beans {
+    margin-top: 50px;
+}
+
+.bean-box {
+    margin-top: 20px;
+}
+
+.bean-image {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.imaginary-container {
+    margin-top: 20%;
+}
+
+.leftimage {
+    float:left;
+}
+
+.righttext {
+    margin-left: 60px;
+    float: none;
+}
+
+.righttext h2 {
+    margin-top: 15px;
+}
+
+.hcenter {
+    text-align: center;
+}
+
+.vcenter {
+    min-height: 60%;  /* Fallback for vh unit */
+    min-height: 60vh; /* You might also want to use
+                        'height' property instead.
+
+                        Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+
+                        In this case the parent of '.vertical-center'
+                        is the <body> element */
+
+    /* Make it a flex container */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+    -webkit-align-items : center;
+    -moz-box-align : center;
+    -ms-flex-align : center;
+    align-items : center;
+
+    /* In legacy web browsers such as Firefox 9
+       we need to specify the width of the flex container */
+    width: 100%;
+
+    /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+       hence the bootstrap's container won't be aligned to the center anymore.
+
+       Therefore, we should use the following declarations to get it centered again */
+    -webkit-box-pack : center;
+    -moz-box-pack : center;
+    -ms-flex-pack : center;
+    -webkit-justify-content : center;
+    justify-content : center;
+}
