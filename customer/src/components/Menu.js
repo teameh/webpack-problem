@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import logoSX from '../../public/img/logo-xs.png'
 
 class Menu extends Component {
 
@@ -7,7 +8,7 @@ class Menu extends Component {
         let logo;
         if (this.props.showLogo) {
             logo = <Link to="/" activeClassName="active" className="navbar-left">
-                <img src="/img/logo-xs.png" role="presentation" />
+                <img src={logoSX} role="presentation" />
             </Link>
         }
 

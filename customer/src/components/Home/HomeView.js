@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react'
 import Menu from '../Menu'
 import SearchBox from '../SearchBox'
+import logo from '../../../public/img/logo.png'
+
 
 const HomeView = ({ showLogo, showSuggestions, onSearch, onChange }) => (
     <div>
@@ -8,7 +10,7 @@ const HomeView = ({ showLogo, showSuggestions, onSearch, onChange }) => (
         <div className="col-lg-5 col-lg-offset-4">
             <div className="imaginary-container">
                 <div className="logo-home">
-                    <img src="/img/logo.png" role="presentation"/>
+                    <img src={logo} role="presentation"/>
                 </div>
                 <SearchBox
                     showSuggestions={true}

@@ -8,4 +8,47 @@
     "build-server": "webpack --config webpack/webpack.config.server.js",
     "build-client": "webpack --config webpack/webpack.config.client.js"
   },
+  "babel": {
+    "presets": [
+      "latest",
+      "react"
+    ],
+    "plugins": [
+      "babel-plugin-transform-decorators-legacy",
+      "babel-plugin-transform-class-properties",
+      "babel-plugin-transform-object-rest-spread",
+      "babel-plugin-syntax-class-properties"
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "react-spinkit": "^1.1.11",
+    "redux": "^3.6.0",
+    "redux-promise-counter": "^1.0.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.22.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "clean-webpack-plugin": "^0.1.15",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.5",
+    "file-loader": "^0.9.0",
+    "handlebars": "^4.0.6",
+    "handlebars-loader": "^1.4.0",
+    "html-webpack-plugin": "^2.26.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.0"
+  }
 }

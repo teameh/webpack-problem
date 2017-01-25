@@ -19,7 +19,7 @@ const store = createStore(
 render(
     <Provider store={store}>
         <Router
-            routes={config.routes}
+            routes={config.router.routes}
             history={browserHistory}
         />
     </Provider>,
