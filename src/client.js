@@ -1,3 +1,8 @@
+import 'isomorphic-fetch';
+import 'es6-promise';
+import 'bootstrap/dist/css/bootstrap.css';
+import '../customer/src/index.css';
+
 import React from 'react'
 import { Router, browserHistory } from 'react-router'
 import { render } from 'react-dom'
@@ -5,7 +10,6 @@ import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 
 import config from '../customer/linc.config.js'
-
 
 const configMiddleware = config.redux.middleware || [];
 const initialState = (window && window.__INITIALSTATE__) || {};

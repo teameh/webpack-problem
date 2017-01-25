@@ -39,6 +39,8 @@ const render = (url, callback) => {
                     <RouterContext {...renderProps} />
                 </Provider>
             );
+
+            callback(null, {resultCode: 200, body:html});
         } else {
             callback(null, {resultCode: 404});
         }

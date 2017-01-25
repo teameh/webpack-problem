@@ -13,3 +13,19 @@ The problem is (relatively) simple:
 * You should be able to host the files and see a React app.
 
 Bonus points can be had for showing how to take libraries out of the main JS and inject them into the HTML with script tags.
+## Scripts
+
+```bash
+$ npm start                    // npm run dev:client
+
+$ npm run dev:client           // bundle client for development
+
+$ npm run dev:server           // bundle server for development
+
+$ npm run build:client         // bundle client for production
+
+$ npm run build:server         // bundle server for production
+
+$ npm run build                // build:client && build:server
+```
+

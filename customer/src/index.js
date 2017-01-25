@@ -7,9 +7,6 @@ import thunk from 'redux-thunk'
 import createLogger from 'redux-logger'
 import reducer from './reducers'
 
-import 'bootstrap/dist/css/bootstrap.css'
-import './index.css'
-
 import routes from './routes'
 
 const middleware = [ thunk ];
